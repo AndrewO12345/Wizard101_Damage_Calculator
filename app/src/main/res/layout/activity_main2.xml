@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="378dp"
         android:layout_height="212dp"
         android:layout_marginTop="16dp"
         android:onClick="start"
         android:text="Go"
+        android:background="@drawable/blades"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"

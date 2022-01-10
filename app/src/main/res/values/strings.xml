@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="spell_damage">Spell Damage</string>
-    <string name="wizard101_damage_calculator">Wizard101 Damage Calculator</string>
+    <string name="wizard101_damage_calculator">Wizard101 Damage\nCalculator</string>
     <string name="_0">0</string>
     <string name="percent_boost">Percent Boost</string>
     <string name="flat_boost">Flat Boost</string>
     <string name="aura_boost">Aura Boost</string>
     <string name="charms_click_in_order_of_placed">Charms (Click in order of placed)</string>
-    <string name="positive">Positive</string>
+    <string name="positive">Blades</string>
     <string name="_p20">+20%</string>
     <string name="_p25">+25%</string>
     <string name="_p30">+30%</string>
@@ -16,7 +16,7 @@
     <string name="_p45">+45%</string>
     <string name="_p50">+50%</string>
     <string name="other">+Other</string>
-    <string name="negative">Negative</string>
+    <string name="negative">Weaknesses</string>
     <string name="_m10">-10%</string>
     <string name="_m15">-15%</string>
     <string name="_m20">-20%</string>
@@ -31,11 +31,13 @@
     <string name="mOther">-Other</string>
     <string name="global_boost">Global Boost</string>
     <string name="targets_aura">Targets Aura</string>
-    <string name="wards">Wards</string>
     <string name="targets_flat_resist">Targets Flat Resist</string>
     <string name="targets_resist_percentage">Targets Resist Percentage</string>
     <string name="critical_boost">Critical Boost</string>
     <string name="calculate">Calculate</string>
     <string name="total_damage_w_out_crit">Total Damage w/out Crit</string>
     <string name="total_damage_w_crit">Total Damage w/ Crit</string>
+    <string name="wards">Wards</string>
+    <string name="traps">Traps</string>
+    <string name="shields">Shields</string>
 </resources>
