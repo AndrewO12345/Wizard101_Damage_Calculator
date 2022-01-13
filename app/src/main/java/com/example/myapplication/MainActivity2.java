@@ -2,8 +2,12 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -13,9 +17,13 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
 
-    }
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
-    public void start(View view) {
-        setContentView(R.layout.activity_main);
+        Button home = findViewById(R.id.home);
+
+        Intent intent = new Intent(this, MainActivity.class);
+
+        home.setOnClickListener((v -> startActivity(intent)));
     }
 }

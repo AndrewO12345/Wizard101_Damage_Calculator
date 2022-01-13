@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "Tutorial"
+            android:text = "Help"
             android:textSize="30dp"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
@@ -65,6 +65,89 @@
 
         </ImageView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pierce">
 
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For this field use the value you see under armour pierce on your character stats">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining Number Fields">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For the remaining fields aura boost, resistance, etc. If the target has a boost to use use a positive number and if the target has a resistance to you use a negative number.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charms and Wards">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For each the charm and the wards make sure you use the buttons in the order of which they were cast.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Critical Multiplier">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Given the new crit system there is no way to know what the critical boost is without knowing the enimies block which is information we aren't given so as a general rule of thumb using a 1.5 crit bonus seems to deliver the most accurate results in different situations.">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Issues?">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you have any issues or suggestions feel free to contact me at wizdamagecalculator@gmail.com">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You!">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:onClick="back">
+
+        </Button>
     </LinearLayout>
 </ScrollView>
