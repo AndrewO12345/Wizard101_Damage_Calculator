@@ -11,4 +11,5 @@
     <color name="header_orange">#cc7402</color>
     <color name="positive">#57bd3a</color>
     <color name="negative">#e32d2d</color>
+    <color name="link">#4eabf2</color>
 </resources>

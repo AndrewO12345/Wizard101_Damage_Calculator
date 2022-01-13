@@ -6,8 +6,9 @@
         android:fillViewport="true">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
             <TextView
@@ -30,7 +31,7 @@
             </TextView>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -47,6 +48,7 @@
                     android:layout_height="wrap_content"
                     android:autofillHints="0"
                     android:hint="@string/_0"
+                    android:gravity="end"
                     android:inputType="number">
 
                 </EditText>
@@ -93,6 +95,31 @@
 
                 <EditText
                     android:id="@+id/flatBoost"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="0"
+                    android:hint="@string/_0"
+                    android:inputType="number">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/percentage_pierce">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pierce"
                     android:layout_width="113dp"
                     android:layout_height="wrap_content"
                     android:autofillHints="0"
@@ -233,263 +260,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="@string/wards">
+                android:text="@string/charms_click_in_order_of_placed">
 
             </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/traps">
-
-            </TextView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:divider="@drawable/divider"
-                android:showDividers="middle"
-                android:padding="5dp">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/t20"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/_p20">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/t25"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/_p25">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/t30"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/_p30">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/t35"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/_p35">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:padding="5dp">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/t40"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/_p40">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/t45"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/_p45">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/t50"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/_p50">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/tOther"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/blades"
-                    android:text="@string/other">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/negative">
-
-            </TextView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:padding="5dp">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s10"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m10">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s15"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m15">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s20"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m20">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s25"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m25">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:padding="5dp">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s30"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m30">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s35"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m35">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s40"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m40">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s45"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m45">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:padding="5dp">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s50"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m50">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s55"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m55">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/s90"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/_m90">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/sOther"
-                    android:layout_width="73dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/weaknesses"
-                    android:text="@string/mOther">
-
-                </androidx.appcompat.widget.AppCompatButton>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:text="@string/wards">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/traps">
+                android:text="@string/positive">
 
             </TextView>
 
@@ -588,7 +366,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/shields">
+                android:text="@string/negative">
 
             </TextView>
 
@@ -727,6 +505,220 @@
 
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/wards">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/traps">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:divider="@drawable/divider"
+                android:showDividers="middle"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/t30"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/_p30">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/t35"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/_p35">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/t40"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/_p40">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/t45"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/_p45">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/t70"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/_p70">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/t75"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/_p75">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/t80"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/_p80">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tOther"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/blades"
+                    android:text="@string/other">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shields">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/s45"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/_m45">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/s50"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/_m50">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/s55"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/_m55">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/s70"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/_m70">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/s75"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/_m75">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/s80"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/_m80">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/s85"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/_m85">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sOther"
+                    android:layout_width="73dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/weaknesses"
+                    android:text="@string/mOther">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:text="@string/clear_charms_and_wards">
+
+            </Button>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -749,21 +741,33 @@
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/calculate"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/calculate">
+                android:orientation="horizontal"
+                android:paddingRight="30dp"
+                android:gravity="center">
 
-            </Button>
+                <Button
+                    android:id="@+id/calculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/calculate">
+
+                </Button>
+
+            </LinearLayout>
+
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -784,6 +788,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/totalCritDamage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -793,6 +798,22 @@
 
 
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/help"
+                android:textAlignment="center"
+                android:textColor="@color/link"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
 
         </LinearLayout>
     </ScrollView>
