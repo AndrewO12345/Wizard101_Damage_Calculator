@@ -50,4 +50,20 @@
     <string name="percentage_pierce">Percentage Pierce</string>
     <string name="clear_charms_and_wards">Clear</string>
     <string name="help"><u>Help?</u></string>
+    <string name="tutorial">Help</string>
+    <string name="spell_damage_tutorial">Use the damage value shown on the card. For cards with variable damage use the lowest number for minimum damage, highest number for maximum damage.</string>
+    <string name="gear_s_damage_boost">Gear\'s damage boost</string>
+    <string name="gear_boost_tutorial">For percent boost use the first number and for flat boost use seconds number. Remember that if your damage is over 100 or 150 your PvP and PvE values may differ due to the new damage system. Top number is percent bottom number is flat damage.</string>
+    <string name="pierce">Pierce</string>
+    <string name="pierce_tutorial">For this field use the value you see under armour pierce on your character stats.</string>
+    <string name="remaining_number_fields">Remaining Number Fields</string>
+    <string name="remaining_number_fields_tutorial">For the remaining fields aura boost, resistance, etc. If the target has a boost use a positive number and if the target has a resistance to you use a negative number.</string>
+    <string name="charms_and_wards">Charms and Wards</string>
+    <string name="charms_and_wards_tutorial">To add a charm or a ward click the button corresponding to the percent boost. For booth charms and wards make sure you click the buttons in the order of which they were cast.</string>
+    <string name="critical_multiplier">Critical Multiplier</string>
+    <string name="critical_multiplier_tutorial">Given the new critical system there is no way to know what the exact critical boost is without knowing the enemies block rating which is information we aren\'t given so as a general rule of thumb using a 1.5 critical bonus seems to deliver the most accurate results in the most different situations.</string>
+    <string name="issues">Issues?</string>
+    <string name="issues_contact">If you have any issues or suggestions feel free to contact me at wizdamagecalculator@gmail.com</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="home">Home</string>
 </resources>

@@ -15,26 +15,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text = "Help"
-            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
             android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:layout_gravity="center_horizontal">
+            android:paddingBottom="10dp"
+            android:text="@string/tutorial"
+            android:textSize="34sp"
+            android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Spell Damage">
+            android:text="@string/spell_damage"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="24sp"
+            android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\tUse the damage value shown on the card.">
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/spell_damage_tutorial">
 
         </TextView>
 
@@ -47,14 +57,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gear damage boost"
-            android:textSize="20dp">
+            android:text="@string/gear_s_damage_boost"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="24sp"
+            android:textStyle="bold">
 
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\tFor percent boost use the first number and for flat boost use seconds number. Remember that if your damage is over 100 or 150 your PvP and PvE values may differ due to the new damage system. Top number is percent bottom number is flat damage.">
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/gear_boost_tutorial">
 
         </TextView>
 
@@ -68,76 +87,130 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pierce">
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/pierce"
+            android:textSize="24sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="For this field use the value you see under armour pierce on your character stats">
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/pierce_tutorial">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Remaining Number Fields">
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/remaining_number_fields"
+            android:textSize="24sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="For the remaining fields aura boost, resistance, etc. If the target has a boost to use use a positive number and if the target has a resistance to you use a negative number.">
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/remaining_number_fields_tutorial">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Charms and Wards">
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/charms_and_wards"
+            android:textSize="24sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="For each the charm and the wards make sure you use the buttons in the order of which they were cast.">
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/charms_and_wards_tutorial">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Critical Multiplier">
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/critical_multiplier"
+            android:textSize="24sp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Given the new crit system there is no way to know what the critical boost is without knowing the enimies block which is information we aren't given so as a general rule of thumb using a 1.5 crit bonus seems to deliver the most accurate results in different situations.">
-
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Issues?">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="If you have any issues or suggestions feel free to contact me at wizdamagecalculator@gmail.com">
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/critical_multiplier_tutorial">
 
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thank You!">
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/issues"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/issues_contact">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/thank_you"
+            android:textSize="24sp"
+            android:textStyle="bold">
 
         </TextView>
 
@@ -145,8 +218,7 @@
             android:id="@+id/home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
-            android:onClick="back">
+            android:text="@string/home">
 
         </Button>
     </LinearLayout>
