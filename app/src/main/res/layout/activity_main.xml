@@ -42,13 +42,19 @@
 
                 </TextView>
 
+                <View
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content">
+
+                </View>
+
+
                 <EditText
                     android:id="@+id/spellDamage"
                     android:layout_width="113dp"
                     android:layout_height="wrap_content"
                     android:autofillHints="0"
                     android:hint="@string/_0"
-                    android:gravity="end"
                     android:inputType="number">
 
                 </EditText>
