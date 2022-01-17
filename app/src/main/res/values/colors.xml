@@ -12,4 +12,6 @@
     <color name="positive">#57bd3a</color>
     <color name="negative">#e32d2d</color>
     <color name="link">#4eabf2</color>
+    <color name="light_green">#80f284</color>
+    <color name="clear">#fa3232</color>
 </resources>

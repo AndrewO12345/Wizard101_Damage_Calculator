@@ -42,13 +42,6 @@
 
                 </TextView>
 
-                <View
-                    android:layout_width="106dp"
-                    android:layout_height="wrap_content">
-
-                </View>
-
-
                 <EditText
                     android:id="@+id/spellDamage"
                     android:layout_width="113dp"
@@ -265,20 +258,36 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:text="@string/charms_click_in_order_of_placed">
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/charms"
+                android:textSize="20sp"
+                android:textStyle="bold">
 
             </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/positive">
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/positive"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/blades_text"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
 
             </TextView>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
@@ -295,6 +304,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/b25"
                     android:layout_width="73dp"
@@ -304,6 +320,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/b30"
                     android:layout_width="73dp"
@@ -312,6 +335,13 @@
                     android:text="@string/_p30">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/b35"
@@ -325,7 +355,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
@@ -340,6 +370,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/b45"
                     android:layout_width="73dp"
@@ -349,6 +386,14 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/b50"
                     android:layout_width="73dp"
@@ -357,6 +402,13 @@
                     android:text="@string/_p50">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/bOther"
@@ -372,12 +424,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textSize="18sp"
                 android:text="@string/negative">
 
             </TextView>
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/weak_text"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
@@ -392,6 +456,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w15"
                     android:layout_width="73dp"
@@ -401,6 +472,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w20"
                     android:layout_width="73dp"
@@ -409,6 +487,13 @@
                     android:text="@string/_m20">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w25"
@@ -422,7 +507,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
@@ -437,6 +522,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w35"
                     android:layout_width="73dp"
@@ -446,6 +538,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w40"
                     android:layout_width="73dp"
@@ -454,6 +553,13 @@
                     android:text="@string/_m40">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w45"
@@ -482,6 +588,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w55"
                     android:layout_width="73dp"
@@ -491,6 +604,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/w90"
                     android:layout_width="73dp"
@@ -499,6 +619,13 @@
                     android:text="@string/_m90">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/wOther"
@@ -515,6 +642,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
                 android:text="@string/wards">
 
             </TextView>
@@ -522,12 +654,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="18sp"
                 android:text="@string/traps">
 
             </TextView>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
@@ -544,6 +679,23 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/traps_text"
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/t35"
                     android:layout_width="73dp"
@@ -553,6 +705,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/t40"
                     android:layout_width="73dp"
@@ -561,6 +720,13 @@
                     android:text="@string/_p40">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/t45"
@@ -574,7 +740,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
@@ -589,6 +755,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/t75"
                     android:layout_width="73dp"
@@ -598,6 +771,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/t80"
                     android:layout_width="73dp"
@@ -606,6 +786,13 @@
                     android:text="@string/_p80">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/tOther"
@@ -621,12 +808,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
                 android:text="@string/shields">
 
             </TextView>
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/shield_text"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
@@ -641,6 +840,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/s50"
                     android:layout_width="73dp"
@@ -650,6 +856,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/s55"
                     android:layout_width="73dp"
@@ -658,6 +871,13 @@
                     android:text="@string/_m55">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/s70"
@@ -686,6 +906,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/s80"
                     android:layout_width="73dp"
@@ -695,6 +922,13 @@
 
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/s85"
                     android:layout_width="73dp"
@@ -703,6 +937,13 @@
                     android:text="@string/_m85">
 
                 </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/sOther"
@@ -715,24 +956,44 @@
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/clear"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:layout_gravity="end"
-                android:text="@string/clear_charms_and_wards">
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
 
-            </Button>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/clear_button"
+                    android:text="@string/clear_charms_and_wards">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/div">
+
+                </TextView>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="@string/critical_boost">
 
                 </TextView>
@@ -747,61 +1008,89 @@
 
             </LinearLayout>
 
-            <LinearLayout
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/calculate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingRight="30dp"
-                android:gravity="center">
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/calculate"
+                android:textColor="@color/white"
+                android:text="@string/calculate">
 
-                <Button
-                    android:id="@+id/calculate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="@string/calculate">
-
-                </Button>
-
-            </LinearLayout>
-
-
+            </androidx.appcompat.widget.AppCompatButton>
 
             <LinearLayout
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/totalDamage"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/total_damage_w_out_crit">
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_damage_w_out_crit">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/totalDamage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="@string/zero">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/double_div">
 
                 </TextView>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="     ">
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_damage_w_crit">
 
-                <TextView
-                    android:id="@+id/totalCritDamage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/total_damage_w_crit">
+                    </TextView>
 
-                </TextView>
+                    <TextView
+                        android:id="@+id/totalCritDamage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="@string/zero">
 
+                    </TextView>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -815,8 +1104,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/link"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                >
+                android:textStyle="bold">
 
             </TextView>
 

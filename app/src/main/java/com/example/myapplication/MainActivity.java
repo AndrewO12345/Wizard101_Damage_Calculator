@@ -305,6 +305,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public String buffToString(ArrayList<Double> buffs) {
+        String total_buffs = null;
+        int count = 0;
+        for (double i : buffs) {
+            if (count == 0) {
+                total_buffs = i + ", ";
+            } else if (count == buffs.size()) {
+                total_buffs = total_buffs + i;
+            } else {
+                total_buffs = total_buffs + i + ", ";
+            }
+             count = count + 1;
+        }
+        return total_buffs;
+    }
     // Crit damage = Crit / (Crit + (3 * Block))
 
 }
