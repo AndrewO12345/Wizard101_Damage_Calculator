@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.widget.Button;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class CalculatorScreen extends AppCompatActivity {
 
     ArrayList<Double> charms = new ArrayList<>();
     ArrayList<Double> wards = new ArrayList<>();
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculator);
 
         spellDamage = findViewById(R.id.spellDamage);
         percentBoost = findViewById(R.id.percentBoost);
@@ -137,8 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-            builder.setTitle("Enter Amount of Last Purchase");
-            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setTitle("Enter Blade Percent");
             builder.setView(edittext);
 
             builder.setPositiveButton("Ok", (dialogInterface, i) -> {
@@ -214,13 +214,12 @@ public class MainActivity extends AppCompatActivity {
 
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-            builder.setTitle("Enter Amount of Last Purchase");
-            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setTitle("Enter Weakness Percent");
             builder.setView(edittext);
 
             builder.setPositiveButton("Ok", (dialogInterface, i) -> {
                 String value = edittext.getText().toString();
-                charms.add(Double.valueOf(value));
+                charms.add((-1) * Double.valueOf(value));
                 buffText.setText(buffToString(charms));
             });
             builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
@@ -273,13 +272,12 @@ public class MainActivity extends AppCompatActivity {
 
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-            builder.setTitle("Enter Amount of Last Purchase");
-            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setTitle("Enter Trap Percent");
             builder.setView(edittext);
 
             builder.setPositiveButton("Ok", (dialogInterface, i) -> {
                 String value = edittext.getText().toString();
-                charms.add(Double.valueOf(value));
+                wards.add(Double.valueOf(value));
                 wardText.setText(buffToString(wards));
             });
             builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
@@ -330,13 +328,12 @@ public class MainActivity extends AppCompatActivity {
 
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-            builder.setTitle("Enter Amount of Last Purchase");
-            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setTitle("Enter Shield Percent");
             builder.setView(edittext);
 
             builder.setPositiveButton("Ok", (dialogInterface, i) -> {
                 String value = edittext.getText().toString();
-                charms.add(Double.valueOf(value));
+                wards.add((-1) * Double.valueOf(value));
                 wardText.setText(buffToString(wards));
             });
             builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
@@ -357,7 +354,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView help = findViewById(R.id.help);
 
-        help.setOnClickListener((v -> setContentView(R.layout.activity_main2)));
+        help.setOnClickListener(v -> goToTutorial());
 
         // Calculate sequence
         Button calculate = findViewById(R.id.calculate);
@@ -497,13 +494,13 @@ public class MainActivity extends AppCompatActivity {
                 if (i > 0) {
                     total_buffs = new StringBuilder(" + " + i);
                 } else {
-                    total_buffs = new StringBuilder("" + i);
+                    total_buffs = new StringBuilder(" - " + (-1 * i));
                 }
             } else {
                 if (i > 0) {
                     total_buffs.append(" + ").append(i);
                 } else {
-                    total_buffs.append(i);
+                    total_buffs.append(" - " ).append((-1) * i);
                 }
             }
              count = count + 1;
@@ -513,5 +510,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return "";
         }
+    }
+
+    public void goToTutorial() {
+        Intent intent = new Intent(this, TutorialScreen.class);
+        startActivity(intent);
     }
 }

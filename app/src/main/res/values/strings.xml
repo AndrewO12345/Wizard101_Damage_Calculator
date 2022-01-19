@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Wizard101 Damage Calculator</string>
     <string name="spell_damage">Spell Damage</string>
     <string name="wizard101_damage_calculator">Wizard101 Damage\nCalculator</string>
     <string name="_0">0</string>
@@ -65,9 +65,11 @@
     <string name="issues">Issues?</string>
     <string name="issues_contact">If you have any issues or suggestions feel free to contact me at wizdamagecalculator@gmail.com</string>
     <string name="thank_you">Thank You!</string>
-    <string name="home">Home</string>
+    <string name="home">Back</string>
     <string name="div">\t</string>
     <string name="charms">Charms</string>
     <string name="double_div">\t\t</string>
     <string name="zero">0</string>
+    <string name="storm_lord_content_description">Storm Lord picture for Spell Damage</string>
+    <string name="content_description_damage_boost">Damage Boost Picture</string>
 </resources>
