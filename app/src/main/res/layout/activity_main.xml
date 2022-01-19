@@ -277,15 +277,6 @@
 
             </TextView>
 
-            <TextView
-                android:id="@+id/blades_text"
-                android:layout_width="match_parent"
-                android:paddingTop="5dp"
-                android:paddingBottom="10dp"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -428,15 +419,6 @@
                 android:paddingBottom="5dp"
                 android:textSize="18sp"
                 android:text="@string/negative">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/weak_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:paddingBottom="10dp">
 
             </TextView>
 
@@ -639,6 +621,17 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/charms_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingBottom="5dp">
+
+            </TextView>
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -685,16 +678,6 @@
                     android:text="@string/div">
 
                 </TextView>
-
-                <TextView
-                    android:id="@+id/traps_text"
-                    android:layout_width="match_parent"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/t35"
@@ -812,15 +795,6 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="5dp"
                 android:text="@string/shields">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/shield_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:paddingBottom="10dp">
 
             </TextView>
 
@@ -956,6 +930,17 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/wards_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingBottom="5dp">
+
+            </TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -987,7 +972,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
-                android:paddingBottom="10dp"
+                android:paddingBottom="15dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -1103,6 +1088,8 @@
                 android:text="@string/help"
                 android:textAlignment="center"
                 android:textColor="@color/link"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
                 android:textSize="20sp"
                 android:textStyle="bold">
 

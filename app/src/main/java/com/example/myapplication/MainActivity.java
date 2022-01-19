@@ -1,8 +1,10 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.NumberPicker;
@@ -91,87 +93,266 @@ public class MainActivity extends AppCompatActivity {
         Button s85 = findViewById(R.id.s85);
         Button sOther = findViewById(R.id.sOther);
 
+        TextView buffText = findViewById(R.id.charms_text);
+
         // Blade button listeners
-        p20.setOnClickListener(v -> charms.add(20.0));
+        p20.setOnClickListener(v -> {
+            charms.add(20.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        p25.setOnClickListener(v -> charms.add(25.0));
+        p25.setOnClickListener(v -> {
+            charms.add(25.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        p30.setOnClickListener(v -> charms.add(30.0));
+        p30.setOnClickListener(v -> {
+            charms.add(30.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        p35.setOnClickListener(v -> charms.add(35.0));
+        p35.setOnClickListener(v -> {
+            charms.add(35.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        p40.setOnClickListener(v -> charms.add(40.0));
+        p40.setOnClickListener(v -> {
+            charms.add(40.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        p45.setOnClickListener(v -> charms.add(45.0));
+        p45.setOnClickListener(v -> {
+            charms.add(45.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        p50.setOnClickListener(v -> charms.add(50.0));
+        p50.setOnClickListener(v -> {
+            charms.add(50.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        pOther.setOnClickListener(v -> charms.add(0.0));
+        pOther.setOnClickListener(v -> {
+            final EditText edittext = new EditText(this);
+            edittext.setInputType(InputType.TYPE_CLASS_NUMBER);
+
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            builder.setTitle("Enter Amount of Last Purchase");
+            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setView(edittext);
+
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> {
+                String value = edittext.getText().toString();
+                charms.add(Double.valueOf(value));
+                buffText.setText(buffToString(charms));
+            });
+            builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
+
+            AlertDialog alert = builder.create();
+            alert.show();
+        });
 
         // Weakness button listeners
-        m10.setOnClickListener(v -> charms.add(-10.0));
+        m10.setOnClickListener(v -> {
+            charms.add(-10.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m15.setOnClickListener(v -> charms.add(-15.0));
+        m15.setOnClickListener(v -> {
+            charms.add(-15.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m20.setOnClickListener(v -> charms.add(-20.0));
+        m20.setOnClickListener(v -> {
+            charms.add(-20.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m25.setOnClickListener(v -> charms.add(-25.0));
+        m25.setOnClickListener(v -> {
+            charms.add(-25.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m30.setOnClickListener(v -> charms.add(-30.0));
+        m30.setOnClickListener(v -> {
+            charms.add(-30.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m35.setOnClickListener(v -> charms.add(-35.0));
+        m35.setOnClickListener(v -> {
+            charms.add(-35.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m40.setOnClickListener(v -> charms.add(-40.0));
+        m40.setOnClickListener(v -> {
+            charms.add(-40.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m45.setOnClickListener(v -> charms.add(-45.0));
+        m45.setOnClickListener(v -> {
+            charms.add(-45.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m50.setOnClickListener(v -> charms.add(-50.0));
+        m50.setOnClickListener(v -> {
+            charms.add(-50.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m55.setOnClickListener(v -> charms.add(-55.0));
+        m55.setOnClickListener(v -> {
+            charms.add(-55.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        m90.setOnClickListener(v -> charms.add(-90.0));
+        m90.setOnClickListener(v -> {
+            charms.add(-90.0);
+            buffText.setText(buffToString(charms));
+        });
 
-        mOther.setOnClickListener(v -> charms.add(0.0));
+        mOther.setOnClickListener(v -> {
+            final EditText edittext = new EditText(this);
+            edittext.setInputType(InputType.TYPE_CLASS_NUMBER);
+
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            builder.setTitle("Enter Amount of Last Purchase");
+            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setView(edittext);
+
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> {
+                String value = edittext.getText().toString();
+                charms.add(Double.valueOf(value));
+                buffText.setText(buffToString(charms));
+            });
+            builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
+
+            AlertDialog alert = builder.create();
+            alert.show();
+        });
+
+        TextView wardText = findViewById(R.id.wards_text);
 
         // Trap button listeners
-        t30.setOnClickListener(v -> wards.add(30.0));
+        t30.setOnClickListener(v -> {
+            wards.add(30.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        t35.setOnClickListener(v -> wards.add(35.0));
+        t35.setOnClickListener(v -> {
+            wards.add(35.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        t40.setOnClickListener(v -> wards.add(40.0));
+        t40.setOnClickListener(v -> {
+            wards.add(40.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        t45.setOnClickListener(v -> wards.add(45.0));
+        t45.setOnClickListener(v -> {
+            wards.add(45.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        t70.setOnClickListener(v -> wards.add(70.0));
+        t70.setOnClickListener(v -> {
+            wards.add(70.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        t75.setOnClickListener(v -> wards.add(75.0));
+        t75.setOnClickListener(v -> {
+            wards.add(75.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        t80.setOnClickListener(v -> wards.add(80.0));
+        t80.setOnClickListener(v -> {
+            wards.add(80.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        tOther.setOnClickListener(v -> wards.add(0.0));
+        tOther.setOnClickListener(v -> {
+            final EditText edittext = new EditText(this);
+            edittext.setInputType(InputType.TYPE_CLASS_NUMBER);
+
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            builder.setTitle("Enter Amount of Last Purchase");
+            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setView(edittext);
+
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> {
+                String value = edittext.getText().toString();
+                charms.add(Double.valueOf(value));
+                wardText.setText(buffToString(wards));
+            });
+            builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
+
+            AlertDialog alert = builder.create();
+            alert.show();
+        });
 
         // Shield button listeners
-        s45.setOnClickListener(v -> charms.add(-45.0));
+        s45.setOnClickListener(v -> {
+            wards.add(-45.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        s50.setOnClickListener(v -> charms.add(-50.0));
+        s50.setOnClickListener(v -> {
+            wards.add(-50.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        s55.setOnClickListener(v -> charms.add(-55.0));
+        s55.setOnClickListener(v -> {
+            wards.add(-55.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        s70.setOnClickListener(v -> charms.add(-70.0));
+        s70.setOnClickListener(v -> {
+            wards.add(-70.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        s75.setOnClickListener(v -> charms.add(-75.0));
+        s75.setOnClickListener(v -> {
+            wards.add(-75.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        s80.setOnClickListener(v -> charms.add(-80.0));
+        s80.setOnClickListener(v -> {
+            wards.add(-80.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        s85.setOnClickListener(v -> charms.add(-85.0));
+        s85.setOnClickListener(v -> {
+            wards.add(-85.0);
+            wardText.setText(buffToString(wards));
+        });
 
-        sOther.setOnClickListener(v -> charms.add(0.0));
+        sOther.setOnClickListener(v -> {
+            final EditText edittext = new EditText(this);
+            edittext.setInputType(InputType.TYPE_CLASS_NUMBER);
+
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            builder.setTitle("Enter Amount of Last Purchase");
+            builder.setMessage("If positive enter positive number.\nIf negative enter negative number.");
+            builder.setView(edittext);
+
+            builder.setPositiveButton("Ok", (dialogInterface, i) -> {
+                String value = edittext.getText().toString();
+                charms.add(Double.valueOf(value));
+                wardText.setText(buffToString(wards));
+            });
+            builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
+
+            AlertDialog alert = builder.create();
+            alert.show();
+        });
 
         Button clear = findViewById(R.id.clear);
 
         clear.setOnClickListener(v -> {
             charms.clear();
             wards.clear();
+            buffText.setText(buffToString(charms));
+            wardText.setText(buffToString(wards));
+
         });
 
         TextView help = findViewById(R.id.help);
@@ -306,20 +487,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String buffToString(ArrayList<Double> buffs) {
-        String total_buffs = null;
+        StringBuilder total_buffs = null;
         int count = 0;
         for (double i : buffs) {
+            if (count % 5 == 0 && count != 0) {
+                total_buffs.append("\n");
+            }
             if (count == 0) {
-                total_buffs = i + ", ";
-            } else if (count == buffs.size()) {
-                total_buffs = total_buffs + i;
+                if (i > 0) {
+                    total_buffs = new StringBuilder(" + " + i);
+                } else {
+                    total_buffs = new StringBuilder("" + i);
+                }
             } else {
-                total_buffs = total_buffs + i + ", ";
+                if (i > 0) {
+                    total_buffs.append(" + ").append(i);
+                } else {
+                    total_buffs.append(i);
+                }
             }
              count = count + 1;
         }
-        return total_buffs;
+        if (total_buffs != null) {
+            return total_buffs.toString();
+        } else {
+            return "";
+        }
     }
-    // Crit damage = Crit / (Crit + (3 * Block))
-
 }
