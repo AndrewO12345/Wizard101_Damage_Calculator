@@ -219,7 +219,7 @@ public class CalculatorScreen extends AppCompatActivity {
 
             builder.setPositiveButton("Ok", (dialogInterface, i) -> {
                 String value = edittext.getText().toString();
-                charms.add((-1) * Double.valueOf(value));
+                charms.add((-1) * Double.parseDouble(value));
                 buffText.setText(buffToString(charms));
             });
             builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
@@ -333,7 +333,7 @@ public class CalculatorScreen extends AppCompatActivity {
 
             builder.setPositiveButton("Ok", (dialogInterface, i) -> {
                 String value = edittext.getText().toString();
-                wards.add((-1) * Double.valueOf(value));
+                wards.add((-1) * Double.parseDouble(value));
                 wardText.setText(buffToString(wards));
             });
             builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.cancel());
